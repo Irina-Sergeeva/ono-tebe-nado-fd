@@ -2,6 +2,7 @@
 .header {
   height: 293px;
   width: 1100px;
+  padding: 0 50px;
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
@@ -9,6 +10,7 @@
 .header__logo {
   display: block;
   width: 148px;
+  margin-left: 4px;
 }
 .cover {
   height: 757px;
@@ -27,10 +29,26 @@
 .header_link-list {
   display: flex;
   flex-direction: row;
-  gap: 20px;
+  gap: 31px;
   list-style: circle;
+  margin-bottom: 4px;
+  font-size: 18px;
+  line-height: 100%;
 }
-.adress {
+.header_link-list-item:first-child {
+  list-style: none;
+}
+.header_link-list-item:not(:first-child) {
+  padding-left: 2px;
+}
+.header_link-list-item:first-child .header__link {
+  text-decoration: none;
+}
+.header__link {
+  text-underline-offset: 4px;
+}
+
+.address {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -39,6 +57,13 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  font-size: 18px;
+  line-height: 24px;
+  font-style: normal;
+  margin-bottom: 5px;
+}
+.address a {
+  text-underline-offset: 4px;
 }
 .overlay {
   position: absolute;
@@ -62,19 +87,21 @@
   grid-template-rows: repeat(3, 1fr);
   font-weight: 700;
   line-height: 115px;
-  letter-spacing: 35px;
 }
 
 .ono {
   justify-self: start;
+  letter-spacing: 30px;
 }
 
 .tebe {
   justify-self: center;
+  letter-spacing: 30px;
 }
 
 .nado {
   justify-self: end;
+  letter-spacing: 30px;
 }
 
 .no-letter-spacing {
@@ -95,7 +122,7 @@
   font-size: 22px;
   font-weight: 400;
   line-height: 28px;
-  word-spacing: 22px;
+  word-spacing: 18.5px;
 }
 
 .bet-button {
@@ -114,7 +141,7 @@
 }
 
 .lots {
-  padding: 180px 24px 0 24px;
+  padding: 184px 24px 0 24px;
 }
 
 .lots_heading {
@@ -137,7 +164,7 @@
 }
 
 .lots_card-list {
-  padding: 16px 0 16px 0;
+  padding: 30px 0;
   display: flex;
   gap: 25px;
 }
@@ -190,18 +217,20 @@
   font-family: Raleway;
   font-size: 20px;
   font-weight: 400;
-  line-height: 120%; 
+  line-height: 120%;
   margin-left: 40px;
+  text-underline-offset: 4px;
 }
 
 .about {
-  padding: 120px 24px 160px 24px;
+  margin: 120px 0 180px 0;
+  padding: 35px 24px 0 24px;
 }
 
 .about_column {
   display: grid;
   grid-template-columns: minmax(auto, 334px) 1fr;
-  gap: 10px;
+  gap: 25px;
 }
 
 .about__title {
@@ -210,7 +239,7 @@
   font-weight: 700;
   line-height: 100%;
   text-transform: uppercase;
-  margin-top: 98px;
+  margin-top: 105px;
   margin-bottom: 100px;
 }
 
@@ -240,14 +269,14 @@
 .obertca-p {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 25px;
 }
 
 .footer {
   display:flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-bottom: 82px;
+  padding: 0 50px 82px 50px;
 }
 
 .footer__social-icon {
@@ -265,5 +294,15 @@
 }
 
 .footer__menu-list {
+  margin-top: 4px;
   list-style-type: none;
+  font-size: 18px;
+  line-height: 110%;
+  text-align: center;
+}
+.footer__menu-link_active {
+  text-decoration: none;
+}
+.footer__menu-link {
+  text-underline-offset: 4px;
 }
