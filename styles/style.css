@@ -76,7 +76,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  min-height: 757px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
